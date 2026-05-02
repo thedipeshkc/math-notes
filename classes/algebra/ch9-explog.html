@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ch 9: Exponentials & Logs – Algebra Notes</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+<header id="site-header">
+  <a href="../../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="algebra.html">Algebra</a>
+    <a href="../precalc/precalc.html">Pre-Calculus</a>
+    <a href="../../extras/cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="ch4-rational.html">4. Rational Expressions</a></li>
+      <li><a href="ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="ch6-inequalities.html">6. Inequalities</a></li>
+      <li><a href="ch7-functions.html">7. Functions &amp; Graphs</a></li>
+      <li><a href="ch8-lines.html">8. Lines &amp; Systems</a></li>
+      <li><a href="ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="../precalc/ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="../precalc/ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="../precalc/ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="../precalc/ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="../precalc/ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="../../extras/cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="../../extras/errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a><span class="sep">›</span>
+      <a href="algebra.html">Algebra</a><span class="sep">›</span>
+      Chapter 9: Exponentials &amp; Logarithms
+    </div>
+    <h1 class="page-title">Chapter 9: Exponentials &amp; Logarithms</h1>
+
+    <h2>9.1 — Exponential Functions</h2>
+    <div class="box definition">
+      <div class="box-title">Definition</div>
+      An <strong>exponential function</strong> has the form $f(x) = a \cdot b^x$ where $b > 0$, $b \neq 1$, and $a \neq 0$.
+      <br>If $b > 1$: the function grows. If $0 &lt; b &lt; 1$: the function decays.
+      The most important base is $e \approx 2.71828\ldots$ (Euler's number), giving $f(x) = e^x$.
+    </div>
+    <p>Key properties: domain is all reals $(-\infty,\infty)$; range is $(0,\infty)$; horizontal asymptote at $y=0$; always passes through $(0, a)$.</p>
+
+    <h2>9.2 — Logarithms</h2>
+    <div class="box definition">
+      <div class="box-title">Definition — Logarithm</div>
+      $\log_b x = y$ means exactly $b^y = x$. In other words, the logarithm answers: "to what power must I raise $b$ to get $x$?"
+      <br>Special cases: $\log_{10} x = \log x$ (common log), $\log_e x = \ln x$ (natural log).
+    </div>
+
+    <div class="box theorem">
+      <div class="box-title">Properties of Logarithms</div>
+      $$\begin{align}
+        \log_b(MN) &= \log_b M + \log_b N \\
+        \log_b\!\left(\tfrac{M}{N}\right) &= \log_b M - \log_b N \\
+        \log_b(M^p) &= p\log_b M \\
+        \log_b b &= 1 \\
+        \log_b 1 &= 0 \\
+        b^{\log_b x} &= x \quad \text{and} \quad \log_b(b^x) = x
+      \end{align}$$
+      <strong>Change of base:</strong> $\log_b x = \dfrac{\ln x}{\ln b} = \dfrac{\log x}{\log b}$
+    </div>
+
+    <div class="box warn">
+      <div class="box-title">Common Errors with Logarithms</div>
+      $\log(M+N) \neq \log M + \log N$ and $\dfrac{\log M}{\log N} \neq \log\!\left(\dfrac{M}{N}\right)$.
+      The log of a sum cannot be split.
+    </div>
+
+    <h2>9.3 — Solving Exponential and Log Equations</h2>
+    <p><strong>To solve exponential equations:</strong> isolate the exponential, take the log of both sides, apply the power rule.</p>
+    <p><strong>To solve log equations:</strong> combine logs using properties, then convert to exponential form.</p>
+
+    <h3>Worked Example 9.1</h3>
+    <p>Solve: $5^{2x-1} = 13$</p>
+    $$\ln(5^{2x-1}) = \ln 13 \implies (2x-1)\ln 5 = \ln 13 \implies x = \frac{\ln 13/\ln 5 + 1}{2} = \frac{\log_5 13 + 1}{2}$$
+
+    <h3>Worked Example 9.2</h3>
+    <p>Solve: $\log_2(x+3) + \log_2(x-1) = 5$</p>
+    $$\log_2[(x+3)(x-1)] = 5 \implies (x+3)(x-1) = 2^5 = 32$$
+    $$x^2 + 2x - 3 = 32 \implies x^2 + 2x - 35 = 0 \implies (x+7)(x-5) = 0$$
+    <p>$x = 5$ or $x = -7$. Check: $x = -7$ gives $\log_2(-4)$ which is undefined. So $x = 5$ only.</p>
+
+    <h2>Practice Problems</h2>
+    <div class="show-hide-bar">
+      <span>Solutions:</span>
+      <button class="btn-toggle" onclick="showAllSolutions(true)">Show All</button>
+      <button class="btn-toggle" onclick="showAllSolutions(false)">Hide All</button>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 1</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Evaluate without a calculator: $\log_3 \dfrac{1}{27}$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$\log_3 \frac{1}{27} = \log_3 3^{-3} = -3$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 2</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">
+        Expand using log properties: $\ln\!\left(\dfrac{x^3\sqrt{y}}{z^2}\right)$
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$= \ln x^3 + \ln y^{1/2} - \ln z^2 = 3\ln x + \tfrac{1}{2}\ln y - 2\ln z$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 3</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Solve: $3^{x+2} = 7^{x-1}$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$\ln 3^{x+2} = \ln 7^{x-1} \implies (x+2)\ln 3 = (x-1)\ln 7$$
+        $$x\ln 3 + 2\ln 3 = x\ln 7 - \ln 7 \implies x(\ln 3 - \ln 7) = -\ln 7 - 2\ln 3$$
+        $$x = \frac{-\ln 7 - 2\ln 3}{\ln 3 - \ln 7} = \frac{\ln 7 + 2\ln 3}{\ln 7 - \ln 3} = \frac{\ln 63}{\ln(7/3)}$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 4</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Solve: $\log(x) + \log(x-3) = 1$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$\log[x(x-3)] = 1 \implies x(x-3) = 10 \implies x^2 - 3x - 10 = 0 \implies (x-5)(x+2)=0$$
+        <p>$x=5$ or $x=-2$. Since $\log(-2)$ is undefined, the only solution is $x = 5$.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="ch8-lines.html"><span class="nav-label">&#8592; Previous</span>Ch 8: Lines &amp; Systems</a>
+      <a href="../precalc/ch1-trig-basics.html"><span class="nav-label">Next &#8594;</span>Pre-Calc Ch 1: Trig Basics</a>
+    </div>
+  </main>
+</div>
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../../js/site.js"></script>
+</body>
+</html>

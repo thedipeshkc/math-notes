@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheat Sheets – Algebra &amp; Pre-Calc Notes</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+<header id="site-header">
+  <a href="../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="../classes/algebra/algebra.html">Algebra</a>
+    <a href="../classes/precalc/precalc.html">Pre-Calculus</a>
+    <a href="cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="../classes/algebra/ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="../classes/algebra/ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="../classes/algebra/ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="../classes/algebra/ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="../classes/algebra/ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="../classes/precalc/ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="../classes/precalc/ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="../classes/precalc/ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="../classes/precalc/ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="../classes/precalc/ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">›</span> Cheat Sheets
+    </div>
+    <h1 class="page-title">Algebra &amp; Trig Cheat Sheets</h1>
+
+    <h2>Algebra Quick Reference</h2>
+
+    <h3>Exponent Laws</h3>
+    <table>
+      <tr><th>Law</th><th>Form</th></tr>
+      <tr><td>Product</td><td>$a^m \cdot a^n = a^{m+n}$</td></tr>
+      <tr><td>Quotient</td><td>$a^m / a^n = a^{m-n}$</td></tr>
+      <tr><td>Power of power</td><td>$(a^m)^n = a^{mn}$</td></tr>
+      <tr><td>Power of product</td><td>$(ab)^n = a^n b^n$</td></tr>
+      <tr><td>Negative exponent</td><td>$a^{-n} = 1/a^n$</td></tr>
+      <tr><td>Zero exponent</td><td>$a^0 = 1$</td></tr>
+      <tr><td>Rational exponent</td><td>$a^{m/n} = \sqrt[n]{a^m}$</td></tr>
+    </table>
+
+    <h3>Factoring Patterns</h3>
+    <table>
+      <tr><th>Pattern</th><th>Factored Form</th></tr>
+      <tr><td>Difference of squares</td><td>$a^2 - b^2 = (a+b)(a-b)$</td></tr>
+      <tr><td>Perfect square (sum)</td><td>$a^2+2ab+b^2 = (a+b)^2$</td></tr>
+      <tr><td>Perfect square (diff)</td><td>$a^2-2ab+b^2 = (a-b)^2$</td></tr>
+      <tr><td>Sum of cubes</td><td>$a^3+b^3 = (a+b)(a^2-ab+b^2)$</td></tr>
+      <tr><td>Difference of cubes</td><td>$a^3-b^3 = (a-b)(a^2+ab+b^2)$</td></tr>
+    </table>
+
+    <h3>Quadratic Formula</h3>
+    <p>For $ax^2 + bx + c = 0$:</p>
+    $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+    <table>
+      <tr><th>Discriminant $\Delta = b^2 - 4ac$</th><th>Number of real roots</th></tr>
+      <tr><td>$\Delta > 0$</td><td>2 distinct real roots</td></tr>
+      <tr><td>$\Delta = 0$</td><td>1 repeated real root</td></tr>
+      <tr><td>$\Delta < 0$</td><td>0 real roots (2 complex)</td></tr>
+    </table>
+
+    <h3>Log Properties</h3>
+    <table>
+      <tr><th>Property</th><th>Form</th></tr>
+      <tr><td>Product rule</td><td>$\log_b(MN) = \log_b M + \log_b N$</td></tr>
+      <tr><td>Quotient rule</td><td>$\log_b(M/N) = \log_b M - \log_b N$</td></tr>
+      <tr><td>Power rule</td><td>$\log_b M^p = p\log_b M$</td></tr>
+      <tr><td>Change of base</td><td>$\log_b x = \ln x / \ln b$</td></tr>
+      <tr><td>Inverse</td><td>$b^{\log_b x} = x$ and $\log_b(b^x) = x$</td></tr>
+    </table>
+
+    <h2>Trigonometry Quick Reference</h2>
+
+    <h3>Trig Values at Key Angles</h3>
+    <table>
+      <tr><th>$\theta$ (rad)</th><th>$\theta$ (deg)</th><th>$\sin\theta$</th><th>$\cos\theta$</th><th>$\tan\theta$</th></tr>
+      <tr><td>$0$</td><td>$0°$</td><td>$0$</td><td>$1$</td><td>$0$</td></tr>
+      <tr><td>$\pi/6$</td><td>$30°$</td><td>$\frac{1}{2}$</td><td>$\frac{\sqrt{3}}{2}$</td><td>$\frac{1}{\sqrt{3}}$</td></tr>
+      <tr><td>$\pi/4$</td><td>$45°$</td><td>$\frac{\sqrt{2}}{2}$</td><td>$\frac{\sqrt{2}}{2}$</td><td>$1$</td></tr>
+      <tr><td>$\pi/3$</td><td>$60°$</td><td>$\frac{\sqrt{3}}{2}$</td><td>$\frac{1}{2}$</td><td>$\sqrt{3}$</td></tr>
+      <tr><td>$\pi/2$</td><td>$90°$</td><td>$1$</td><td>$0$</td><td>undef.</td></tr>
+      <tr><td>$\pi$</td><td>$180°$</td><td>$0$</td><td>$-1$</td><td>$0$</td></tr>
+      <tr><td>$3\pi/2$</td><td>$270°$</td><td>$-1$</td><td>$0$</td><td>undef.</td></tr>
+    </table>
+
+    <h3>Identities Summary</h3>
+    <table>
+      <tr><th>Type</th><th>Identity</th></tr>
+      <tr><td>Pythagorean</td><td>$\sin^2\theta + \cos^2\theta = 1$</td></tr>
+      <tr><td>Pythagorean</td><td>$\tan^2\theta + 1 = \sec^2\theta$</td></tr>
+      <tr><td>Pythagorean</td><td>$1 + \cot^2\theta = \csc^2\theta$</td></tr>
+      <tr><td>Sin sum</td><td>$\sin(\alpha\pm\beta)=\sin\alpha\cos\beta\pm\cos\alpha\sin\beta$</td></tr>
+      <tr><td>Cos sum</td><td>$\cos(\alpha\pm\beta)=\cos\alpha\cos\beta\mp\sin\alpha\sin\beta$</td></tr>
+      <tr><td>Double angle sin</td><td>$\sin 2\theta = 2\sin\theta\cos\theta$</td></tr>
+      <tr><td>Double angle cos</td><td>$\cos 2\theta = \cos^2\theta - \sin^2\theta$</td></tr>
+      <tr><td>Even/Odd</td><td>$\cos(-\theta)=\cos\theta$, $\sin(-\theta)=-\sin\theta$</td></tr>
+    </table>
+  </main>
+</div>
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>

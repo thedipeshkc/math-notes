@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Common Math Errors – Algebra &amp; Pre-Calc Notes</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+<header id="site-header">
+  <a href="../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="../classes/algebra/algebra.html">Algebra</a>
+    <a href="../classes/precalc/precalc.html">Pre-Calculus</a>
+    <a href="cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="../classes/algebra/ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="../classes/algebra/ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="../classes/algebra/ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="../classes/algebra/ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="../classes/algebra/ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="../classes/precalc/ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="../classes/precalc/ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="../classes/precalc/ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="../classes/precalc/ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="../classes/precalc/ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">›</span> Common Math Errors
+    </div>
+    <h1 class="page-title">Common Math Errors</h1>
+    <p>These are errors that appear repeatedly in student work. Review them carefully — being aware of them is the first step to avoiding them.</p>
+
+    <h2>Exponent Errors</h2>
+    <div class="box warn">
+      <div class="box-title">Error 1 — Distributing Exponents Over Addition</div>
+      $(a + b)^n \neq a^n + b^n$ in general. For example:
+      $$(x + 3)^2 \neq x^2 + 9 \qquad \text{Correct: } (x+3)^2 = x^2 + 6x + 9$$
+      Exponents distribute over <em>multiplication</em>, not addition.
+    </div>
+    <div class="box warn">
+      <div class="box-title">Error 2 — Cancelling Terms in Fractions</div>
+      You can only cancel <em>factors</em> (things multiplied), not terms (things added):
+      $$\frac{x^2 + 4}{x} \neq x + 4 \qquad \text{but} \qquad \frac{x^2 \cdot 4}{x} = 4x \; \checkmark$$
+    </div>
+
+    <h2>Radical Errors</h2>
+    <div class="box warn">
+      <div class="box-title">Error 3 — Square Root of a Sum</div>
+      $$\sqrt{a^2 + b^2} \neq a + b \qquad \text{e.g. } \sqrt{9+16} = \sqrt{25} = 5 \neq 3+4$$
+    </div>
+    <div class="box warn">
+      <div class="box-title">Error 4 — Forgetting the $\pm$ When Taking Square Roots</div>
+      Solving $x^2 = 9$ gives $x = \pm 3$, not just $x = 3$. Both solutions must be checked.
+    </div>
+
+    <h2>Fraction / Rational Expression Errors</h2>
+    <div class="box warn">
+      <div class="box-title">Error 5 — Adding Fractions with Different Denominators</div>
+      $$\frac{1}{a} + \frac{1}{b} \neq \frac{1}{a+b} \qquad \text{Correct: } \frac{1}{a}+\frac{1}{b} = \frac{a+b}{ab}$$
+    </div>
+    <div class="box warn">
+      <div class="box-title">Error 6 — Dividing Out the Wrong Way</div>
+      $$\frac{a+b}{b} \neq a \qquad \text{Correct: } \frac{a+b}{b} = \frac{a}{b} + 1$$
+    </div>
+
+    <h2>Equation-Solving Errors</h2>
+    <div class="box warn">
+      <div class="box-title">Error 7 — Not Checking for Extraneous Solutions</div>
+      When solving equations involving radicals, absolute values, or logarithms, always check your solutions in the <em>original</em> equation. Some solutions introduced by squaring or other manipulations will not satisfy the original.
+    </div>
+    <div class="box warn">
+      <div class="box-title">Error 8 — Dividing Both Sides by a Variable</div>
+      Never divide both sides of an equation by a variable expression unless you are sure it is nonzero. Doing so can lose solutions. Example: from $x^2 = 3x$, dividing by $x$ gives $x = 3$ and loses the solution $x = 0$.
+    </div>
+
+    <h2>Logarithm Errors</h2>
+    <div class="box warn">
+      <div class="box-title">Error 9 — Log of a Sum</div>
+      $$\log(a + b) \neq \log a + \log b \qquad \text{and} \qquad \frac{\log a}{\log b} \neq \log\!\left(\frac{a}{b}\right)$$
+      The product and quotient rules apply to $\log(ab)$ and $\log(a/b)$ only.
+    </div>
+
+    <h2>Trigonometry Errors</h2>
+    <div class="box warn">
+      <div class="box-title">Error 10 — $\sin^{-1}x$ vs. $\frac{1}{\sin x}$</div>
+      $\sin^{-1}x$ means the inverse sine function (arcsin), <em>not</em> $\dfrac{1}{\sin x}$ (which is $\csc x$).
+      The notation is unfortunately ambiguous — context and surrounding text determine the meaning.
+    </div>
+    <div class="box warn">
+      <div class="box-title">Error 11 — Wrong Sign in the Double-Angle Formula for Cosine</div>
+      There are three equivalent forms of $\cos 2\theta$. The most error-prone step is picking the wrong one:
+      $$\cos 2\theta = \cos^2\theta - \sin^2\theta = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta$$
+      All three are correct, but mixing them up (e.g., writing $2\cos^2\theta + 1$) is a frequent mistake.
+    </div>
+  </main>
+</div>
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>

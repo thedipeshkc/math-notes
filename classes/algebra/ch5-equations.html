@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ch 5: Solving Equations – Algebra Notes</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+<header id="site-header">
+  <a href="../../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="algebra.html">Algebra</a>
+    <a href="../precalc/precalc.html">Pre-Calculus</a>
+    <a href="../../extras/cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="ch4-rational.html">4. Rational Expressions</a></li>
+      <li><a href="ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="ch6-inequalities.html">6. Inequalities</a></li>
+      <li><a href="ch7-functions.html">7. Functions &amp; Graphs</a></li>
+      <li><a href="ch8-lines.html">8. Lines &amp; Systems</a></li>
+      <li><a href="ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="../precalc/ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="../precalc/ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="../precalc/ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="../precalc/ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="../precalc/ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="../../extras/cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="../../extras/errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a><span class="sep">›</span>
+      <a href="algebra.html">Algebra</a><span class="sep">›</span>
+      Chapter 5: Solving Equations
+    </div>
+    <h1 class="page-title">Chapter 5: Solving Equations</h1>
+
+    <h2>5.1 — Linear Equations</h2>
+    <p>A <strong>linear equation</strong> in one variable has the form $ax + b = 0$. The solution is simply $x = -b/a$ (when $a \neq 0$). The key principle: whatever you do to one side, do to the other.</p>
+
+    <h3>Worked Example 5.1</h3>
+    <p>Solve: $3(2x - 5) - 4 = 2(x + 1) + 6$</p>
+    $$6x - 15 - 4 = 2x + 2 + 6 \implies 6x - 19 = 2x + 8 \implies 4x = 27 \implies x = \frac{27}{4}$$
+
+    <h2>5.2 — Quadratic Equations</h2>
+    <p>A <strong>quadratic equation</strong> is $ax^2 + bx + c = 0$, $a \neq 0$. There are three main strategies:</p>
+
+    <div class="box theorem">
+      <div class="box-title">Strategy 1 — Factoring</div>
+      Factor the left side and apply the Zero Product Property: if $AB = 0$ then $A = 0$ or $B = 0$.
+    </div>
+    <div class="box theorem">
+      <div class="box-title">Strategy 2 — Completing the Square</div>
+      Rewrite as $(x + p)^2 = q$, then take square roots: $x = -p \pm \sqrt{q}$.
+    </div>
+    <div class="box theorem">
+      <div class="box-title">Strategy 3 — Quadratic Formula</div>
+      For $ax^2 + bx + c = 0$:
+      $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+      The <strong>discriminant</strong> $\Delta = b^2 - 4ac$ tells you the number and type of solutions:
+      $\Delta > 0$: two distinct real roots; $\Delta = 0$: one repeated real root; $\Delta < 0$: two complex roots.
+    </div>
+
+    <h3>Worked Example 5.2</h3>
+    <p>Solve by completing the square: $2x^2 - 8x + 3 = 0$</p>
+    $$x^2 - 4x + \tfrac{3}{2} = 0 \implies x^2 - 4x = -\tfrac{3}{2}$$
+    $$x^2 - 4x + 4 = -\tfrac{3}{2} + 4 = \tfrac{5}{2}$$
+    $$(x - 2)^2 = \tfrac{5}{2} \implies x = 2 \pm \sqrt{\tfrac{5}{2}} = 2 \pm \frac{\sqrt{10}}{2}$$
+
+    <h2>5.3 — Equations Involving Radicals</h2>
+    <p>Isolate the radical, then raise both sides to the appropriate power. <strong>Always check your answers</strong> — squaring both sides can introduce extraneous solutions.</p>
+
+    <h3>Worked Example 5.3</h3>
+    <p>Solve: $\sqrt{3x+4} - \sqrt{x} = 2$</p>
+    <p>Isolate one radical: $\sqrt{3x+4} = \sqrt{x} + 2$. Square both sides:</p>
+    $$3x + 4 = x + 4\sqrt{x} + 4 \implies 2x = 4\sqrt{x} \implies x = 2\sqrt{x}$$
+    <p>Square again: $x^2 = 4x \implies x(x-4)=0 \implies x=0$ or $x=4$.</p>
+    <p>Check $x=0$: $\sqrt{4}-\sqrt{0} = 2$ ✓. Check $x=4$: $\sqrt{16}-\sqrt{4}=2$ ✓. Both valid.</p>
+
+    <h2>5.4 — Absolute Value Equations</h2>
+    <div class="box theorem">
+      <div class="box-title">Key Principle</div>
+      $|X| = c$ (with $c \geq 0$) is equivalent to $X = c$ or $X = -c$.
+    </div>
+
+    <h3>Worked Example 5.4</h3>
+    <p>Solve: $|2x - 5| = 9$</p>
+    $$2x - 5 = 9 \implies x = 7 \qquad \text{or} \qquad 2x - 5 = -9 \implies x = -2$$
+
+    <h2>Practice Problems</h2>
+    <div class="show-hide-bar">
+      <span>Solutions:</span>
+      <button class="btn-toggle" onclick="showAllSolutions(true)">Show All</button>
+      <button class="btn-toggle" onclick="showAllSolutions(false)">Hide All</button>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 1</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Solve by factoring: $6x^2 - x - 15 = 0$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>$ac = -90$. Need factors summing to $-1$: choose $9$ and $-10$.</p>
+        $$6x^2 + 9x - 10x - 15 = 3x(2x+3) - 5(2x+3) = (3x-5)(2x+3) = 0$$
+        $$x = \frac{5}{3} \quad \text{or} \quad x = -\frac{3}{2}$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 2</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Use the quadratic formula to solve: $3x^2 + 2x - 4 = 0$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$\Delta = 4 + 48 = 52, \quad x = \frac{-2 \pm \sqrt{52}}{6} = \frac{-2 \pm 2\sqrt{13}}{6} = \frac{-1 \pm \sqrt{13}}{3}$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 3</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Solve: $\sqrt{5x + 1} = x + 1$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Square both sides: $5x+1 = x^2+2x+1 \implies x^2-3x=0 \implies x(x-3)=0$.</p>
+        <p>$x=0$ or $x=3$. Check both in original: $x=0$: $1=1$ ✓. $x=3$: $4=4$ ✓.</p>
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 4</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Solve: $|3x + 2| = |x - 4|$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Case 1: $3x+2 = x-4 \implies 2x = -6 \implies x = -3$.</p>
+        <p>Case 2: $3x+2 = -(x-4) \implies 4x = 2 \implies x = \tfrac{1}{2}$.</p>
+        <p>Both solutions check out: $x = -3$ or $x = \tfrac{1}{2}$.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="ch4-rational.html"><span class="nav-label">&#8592; Previous</span>Ch 4: Rational Expressions</a>
+      <a href="ch6-inequalities.html"><span class="nav-label">Next &#8594;</span>Ch 6: Inequalities</a>
+    </div>
+  </main>
+</div>
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../../js/site.js"></script>
+</body>
+</html>

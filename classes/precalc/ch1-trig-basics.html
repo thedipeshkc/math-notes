@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC Ch 1: Trig Basics – Pre-Calc Notes</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+<header id="site-header">
+  <a href="../../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="../algebra/algebra.html">Algebra</a>
+    <a href="precalc.html">Pre-Calculus</a>
+    <a href="../../extras/cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="../algebra/ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="../algebra/ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="../algebra/ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="../algebra/ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="../algebra/ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="../../extras/cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="../../extras/errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a><span class="sep">›</span>
+      <a href="precalc.html">Pre-Calculus</a><span class="sep">›</span>
+      Chapter 1: Trig Basics
+    </div>
+    <h1 class="page-title">Chapter 1: Trigonometry Basics</h1>
+
+    <h2>1.1 — Angles and Radian Measure</h2>
+    <p>
+      Angles can be measured in <strong>degrees</strong> or <strong>radians</strong>. One full revolution
+      is $360°$ or $2\pi$ radians.
+    </p>
+    <div class="box theorem">
+      <div class="box-title">Conversion Formulas</div>
+      $$\text{radians} = \text{degrees} \times \frac{\pi}{180} \qquad \text{degrees} = \text{radians} \times \frac{180}{\pi}$$
+    </div>
+    <p><strong>Common angles to memorize:</strong></p>
+    <table>
+      <tr><th>Degrees</th><th>$0°$</th><th>$30°$</th><th>$45°$</th><th>$60°$</th><th>$90°$</th><th>$180°$</th><th>$270°$</th><th>$360°$</th></tr>
+      <tr><td>Radians</td><td>$0$</td><td>$\dfrac{\pi}{6}$</td><td>$\dfrac{\pi}{4}$</td><td>$\dfrac{\pi}{3}$</td><td>$\dfrac{\pi}{2}$</td><td>$\pi$</td><td>$\dfrac{3\pi}{2}$</td><td>$2\pi$</td></tr>
+    </table>
+
+    <h2>1.2 — The Six Trig Functions</h2>
+    <div class="box definition">
+      <div class="box-title">Definition — Right Triangle</div>
+      For an angle $\theta$ in a right triangle with opposite side $\text{opp}$, adjacent side $\text{adj}$, and hypotenuse $\text{hyp}$:
+      $$\sin\theta = \frac{\text{opp}}{\text{hyp}}, \quad \cos\theta = \frac{\text{adj}}{\text{hyp}}, \quad \tan\theta = \frac{\text{opp}}{\text{adj}}$$
+      $$\csc\theta = \frac{1}{\sin\theta}, \quad \sec\theta = \frac{1}{\cos\theta}, \quad \cot\theta = \frac{1}{\tan\theta}$$
+    </div>
+    <div class="box definition">
+      <div class="box-title">Definition — Unit Circle</div>
+      For any angle $\theta$, place it in standard position on a unit circle. If the terminal side meets the circle at $(x, y)$, then:
+      $$\cos\theta = x \qquad \sin\theta = y \qquad \tan\theta = \frac{y}{x} \; (x \neq 0)$$
+    </div>
+
+    <h2>1.3 — Exact Values: The Two Special Triangles</h2>
+    <p>Memorize these — they appear constantly:</p>
+    <table>
+      <tr><th>$\theta$</th><th>$\sin\theta$</th><th>$\cos\theta$</th><th>$\tan\theta$</th></tr>
+      <tr><td>$0$ ($0°$)</td><td>$0$</td><td>$1$</td><td>$0$</td></tr>
+      <tr><td>$\pi/6$ ($30°$)</td><td>$\dfrac{1}{2}$</td><td>$\dfrac{\sqrt{3}}{2}$</td><td>$\dfrac{1}{\sqrt{3}}$</td></tr>
+      <tr><td>$\pi/4$ ($45°$)</td><td>$\dfrac{\sqrt{2}}{2}$</td><td>$\dfrac{\sqrt{2}}{2}$</td><td>$1$</td></tr>
+      <tr><td>$\pi/3$ ($60°$)</td><td>$\dfrac{\sqrt{3}}{2}$</td><td>$\dfrac{1}{2}$</td><td>$\sqrt{3}$</td></tr>
+      <tr><td>$\pi/2$ ($90°$)</td><td>$1$</td><td>$0$</td><td>undefined</td></tr>
+    </table>
+
+    <div class="box note">
+      <div class="box-title">Memory Trick — ASTC (All Students Take Calculus)</div>
+      In each quadrant, which functions are <em>positive</em>?
+      Q1: <strong>A</strong>ll; Q2: <strong>S</strong>in (and csc); Q3: <strong>T</strong>an (and cot); Q4: <strong>C</strong>os (and sec).
+    </div>
+
+    <h2>1.4 — The Pythagorean Identity</h2>
+    <div class="box theorem">
+      <div class="box-title">Fundamental Identity</div>
+      $$\sin^2\theta + \cos^2\theta = 1$$
+      Dividing by $\cos^2\theta$: $\tan^2\theta + 1 = \sec^2\theta$. Dividing by $\sin^2\theta$: $1 + \cot^2\theta = \csc^2\theta$.
+    </div>
+
+    <h2>Practice Problems</h2>
+    <div class="show-hide-bar">
+      <span>Solutions:</span>
+      <button class="btn-toggle" onclick="showAllSolutions(true)">Show All</button>
+      <button class="btn-toggle" onclick="showAllSolutions(false)">Hide All</button>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 1</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Convert $225°$ to radians and $\dfrac{7\pi}{4}$ to degrees.</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$225° \times \frac{\pi}{180} = \frac{225\pi}{180} = \frac{5\pi}{4} \text{ rad}$$
+        $$\frac{7\pi}{4} \times \frac{180}{\pi} = \frac{7 \times 180}{4} = 315°$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 2</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Find the exact value of $\sin\!\left(\dfrac{5\pi}{6}\right)$ and $\cos\!\left(\dfrac{5\pi}{6}\right)$.</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>$\dfrac{5\pi}{6}$ is in Quadrant II. The reference angle is $\pi - \dfrac{5\pi}{6} = \dfrac{\pi}{6}$.</p>
+        <p>In Q2: sin is positive, cos is negative.</p>
+        $$\sin\frac{5\pi}{6} = \sin\frac{\pi}{6} = \frac{1}{2}, \qquad \cos\frac{5\pi}{6} = -\cos\frac{\pi}{6} = -\frac{\sqrt{3}}{2}$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 3</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">If $\sin\theta = \dfrac{3}{5}$ and $\theta$ is in Quadrant II, find $\cos\theta$ and $\tan\theta$.</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>By the Pythagorean identity: $\cos^2\theta = 1 - \sin^2\theta = 1 - \dfrac{9}{25} = \dfrac{16}{25}$.</p>
+        <p>In Q2, $\cos\theta < 0$, so $\cos\theta = -\dfrac{4}{5}$.</p>
+        $$\tan\theta = \frac{\sin\theta}{\cos\theta} = \frac{3/5}{-4/5} = -\frac{3}{4}$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 4</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Find all $\theta \in [0, 2\pi)$ satisfying $\cos\theta = -\dfrac{\sqrt{2}}{2}$.</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Reference angle: $\cos^{-1}\!\left(\dfrac{\sqrt{2}}{2}\right) = \dfrac{\pi}{4}$.</p>
+        <p>Cosine is negative in Q2 and Q3:</p>
+        $$\theta = \pi - \frac{\pi}{4} = \frac{3\pi}{4} \quad \text{and} \quad \theta = \pi + \frac{\pi}{4} = \frac{5\pi}{4}$$
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="../algebra/ch9-explog.html"><span class="nav-label">&#8592; Previous (Algebra)</span>Ch 9: Exponentials &amp; Logs</a>
+      <a href="ch2-trig-graphs.html"><span class="nav-label">Next &#8594;</span>Ch 2: Trig Graphs</a>
+    </div>
+  </main>
+</div>
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../../js/site.js"></script>
+</body>
+</html>

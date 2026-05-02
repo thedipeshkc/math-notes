@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ch 3: Factoring – Algebra Notes</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+<header id="site-header">
+  <a href="../../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="algebra.html">Algebra</a>
+    <a href="../precalc/precalc.html">Pre-Calculus</a>
+    <a href="../../extras/cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="ch4-rational.html">4. Rational Expressions</a></li>
+      <li><a href="ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="ch6-inequalities.html">6. Inequalities</a></li>
+      <li><a href="ch7-functions.html">7. Functions &amp; Graphs</a></li>
+      <li><a href="ch8-lines.html">8. Lines &amp; Systems</a></li>
+      <li><a href="ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="../precalc/ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="../precalc/ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="../precalc/ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="../precalc/ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="../precalc/ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="../../extras/cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="../../extras/errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a><span class="sep">›</span>
+      <a href="algebra.html">Algebra</a><span class="sep">›</span>
+      Chapter 3: Factoring
+    </div>
+    <h1 class="page-title">Chapter 3: Factoring</h1>
+
+    <p>
+      Factoring is the reverse of multiplication — we rewrite a polynomial as a product of simpler
+      polynomials. It is one of the most important algebraic skills, used constantly in solving
+      equations, simplifying fractions, and calculus.
+    </p>
+
+    <h2>3.1 — Greatest Common Factor (GCF)</h2>
+    <p>Always check for a GCF <em>first</em> before applying any other technique.</p>
+    <h3>Worked Example 3.1</h3>
+    <p>Factor: $6x^4 - 9x^3 + 15x^2$</p>
+    <p><strong>Solution:</strong> GCF is $3x^2$:</p>
+    $$6x^4 - 9x^3 + 15x^2 = 3x^2(2x^2 - 3x + 5)$$
+
+    <h2>3.2 — Factoring Trinomials</h2>
+    <div class="box theorem">
+      <div class="box-title">Factoring $x^2 + bx + c$</div>
+      Find two numbers $p$ and $q$ such that $p + q = b$ and $p \cdot q = c$. Then:
+      $$x^2 + bx + c = (x+p)(x+q)$$
+    </div>
+    <div class="box theorem">
+      <div class="box-title">Factoring $ax^2 + bx + c$ (AC Method)</div>
+      Compute $ac$. Find factors $p, q$ of $ac$ with $p+q=b$. Split the middle term and factor by grouping.
+    </div>
+
+    <h3>Worked Example 3.2</h3>
+    <p>Factor: $6x^2 + 7x - 3$</p>
+    <p><strong>Solution:</strong> $a=6, b=7, c=-3$, so $ac = -18$. We need $p+q=7$ and $pq=-18$: choose $p=9, q=-2$.</p>
+    $$6x^2 + 9x - 2x - 3 = 3x(2x+3) - 1(2x+3) = (3x-1)(2x+3)$$
+
+    <h2>3.3 — Special Factoring Patterns</h2>
+    <div class="box theorem">
+      <div class="box-title">Patterns to Memorize</div>
+      $$\begin{align}
+        a^2 - b^2 &= (a+b)(a-b) \quad \text{(difference of squares)} \\
+        a^2 + 2ab + b^2 &= (a+b)^2 \quad \text{(perfect square trinomial)} \\
+        a^2 - 2ab + b^2 &= (a-b)^2 \quad \text{(perfect square trinomial)} \\
+        a^3 - b^3 &= (a-b)(a^2+ab+b^2) \quad \text{(difference of cubes)} \\
+        a^3 + b^3 &= (a+b)(a^2-ab+b^2) \quad \text{(sum of cubes)}
+      \end{align}$$
+    </div>
+
+    <div class="box warn">
+      <div class="box-title">Warning — Sum of Squares</div>
+      $a^2 + b^2$ does <strong>not</strong> factor over the real numbers. There is no real factoring of $x^2 + 9$, for example.
+    </div>
+
+    <h3>Worked Example 3.3</h3>
+    <p>Factor completely: $3x^5 - 48x$</p>
+    <p><strong>Solution:</strong> Factor out the GCF first, then apply difference of squares twice:</p>
+    $$3x^5 - 48x = 3x(x^4 - 16) = 3x(x^2+4)(x^2-4) = 3x(x^2+4)(x+2)(x-2)$$
+
+    <h2>3.4 — Factoring by Grouping</h2>
+    <p>For four-term polynomials, group in pairs and factor each group.</p>
+    <h3>Worked Example 3.4</h3>
+    <p>Factor: $x^3 + 2x^2 - 9x - 18$</p>
+    $$= x^2(x+2) - 9(x+2) = (x^2-9)(x+2) = (x+3)(x-3)(x+2)$$
+
+    <h2>Practice Problems</h2>
+    <div class="show-hide-bar">
+      <span>Solutions:</span>
+      <button class="btn-toggle" onclick="showAllSolutions(true)">Show All</button>
+      <button class="btn-toggle" onclick="showAllSolutions(false)">Hide All</button>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 1</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Factor completely: $12x^3y^2 - 8x^2y^3 + 4xy^4$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>GCF is $4xy^2$:</p>
+        $$4xy^2(3x^2 - 2xy + y^2)$$
+        <p>The trinomial $3x^2 - 2xy + y^2$ does not factor further (discriminant $< 0$).</p>
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 2</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Factor: $2x^2 - 5x - 12$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>$ac = -24$. Need $p+q = -5$, $pq = -24$: choose $p = 3, q = -8$.</p>
+        $$2x^2 + 3x - 8x - 12 = x(2x+3) - 4(2x+3) = (x-4)(2x+3)$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 3</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Factor completely: $x^4 - 81$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$x^4 - 81 = (x^2)^2 - 9^2 = (x^2+9)(x^2-9) = (x^2+9)(x+3)(x-3)$$
+        <p>Note: $x^2+9$ does not factor over the reals.</p>
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 4</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Factor: $8x^3 + 27$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Sum of cubes with $a = 2x$, $b = 3$:</p>
+        $$8x^3+27 = (2x)^3+3^3 = (2x+3)(4x^2-6x+9)$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 5</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Factor completely: $2x^4 + x^3 - 18x^2 - 9x$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$= x(2x^3 + x^2 - 18x - 9) = x\bigl[x^2(2x+1) - 9(2x+1)\bigr] = x(x^2-9)(2x+1)$$
+        $$= x(x+3)(x-3)(2x+1)$$
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="ch2-polynomials.html"><span class="nav-label">&#8592; Previous</span>Ch 2: Polynomials</a>
+      <a href="ch4-rational.html"><span class="nav-label">Next &#8594;</span>Ch 4: Rational Expressions</a>
+    </div>
+  </main>
+</div>
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC Ch 3: Trig Identities – Pre-Calc Notes</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+<header id="site-header">
+  <a href="../../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="../algebra/algebra.html">Algebra</a>
+    <a href="precalc.html">Pre-Calculus</a>
+    <a href="../../extras/cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="../algebra/ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="../algebra/ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="../algebra/ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="../algebra/ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="../algebra/ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="../../extras/cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="../../extras/errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a><span class="sep">›</span>
+      <a href="precalc.html">Pre-Calculus</a><span class="sep">›</span>
+      Chapter 3: Trig Identities
+    </div>
+    <h1 class="page-title">Chapter 3: Trigonometric Identities</h1>
+
+    <h2>3.1 — Fundamental Identities</h2>
+    <div class="box theorem">
+      <div class="box-title">Reciprocal &amp; Quotient Identities</div>
+      $$\csc\theta = \frac{1}{\sin\theta}, \quad \sec\theta = \frac{1}{\cos\theta}, \quad \cot\theta = \frac{1}{\tan\theta}$$
+      $$\tan\theta = \frac{\sin\theta}{\cos\theta}, \quad \cot\theta = \frac{\cos\theta}{\sin\theta}$$
+    </div>
+    <div class="box theorem">
+      <div class="box-title">Pythagorean Identities</div>
+      $$\sin^2\theta + \cos^2\theta = 1 \qquad \tan^2\theta + 1 = \sec^2\theta \qquad 1 + \cot^2\theta = \csc^2\theta$$
+    </div>
+    <div class="box theorem">
+      <div class="box-title">Even/Odd Identities</div>
+      $$\sin(-\theta) = -\sin\theta \quad \text{(odd)}, \qquad \cos(-\theta) = \cos\theta \quad \text{(even)}$$
+      $$\tan(-\theta) = -\tan\theta \quad \text{(odd)}$$
+    </div>
+
+    <h2>3.2 — Sum and Difference Formulas</h2>
+    <div class="box theorem">
+      <div class="box-title">Sum &amp; Difference</div>
+      $$\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta$$
+      $$\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta$$
+      $$\tan(\alpha \pm \beta) = \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta}$$
+    </div>
+
+    <h3>Worked Example 3.1</h3>
+    <p>Find the exact value of $\cos 75°$.</p>
+    $$\cos 75° = \cos(45°+30°) = \cos 45°\cos 30° - \sin 45°\sin 30°$$
+    $$= \frac{\sqrt{2}}{2}\cdot\frac{\sqrt{3}}{2} - \frac{\sqrt{2}}{2}\cdot\frac{1}{2} = \frac{\sqrt{6}-\sqrt{2}}{4}$$
+
+    <h2>3.3 — Double-Angle Formulas</h2>
+    <div class="box theorem">
+      <div class="box-title">Double-Angle</div>
+      $$\sin 2\theta = 2\sin\theta\cos\theta$$
+      $$\cos 2\theta = \cos^2\theta - \sin^2\theta = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta$$
+      $$\tan 2\theta = \frac{2\tan\theta}{1-\tan^2\theta}$$
+    </div>
+
+    <h2>3.4 — Half-Angle Formulas</h2>
+    <div class="box theorem">
+      <div class="box-title">Half-Angle (sign depends on quadrant of $\theta/2$)</div>
+      $$\sin\frac{\theta}{2} = \pm\sqrt{\frac{1-\cos\theta}{2}} \qquad \cos\frac{\theta}{2} = \pm\sqrt{\frac{1+\cos\theta}{2}}$$
+    </div>
+
+    <h2>3.5 — Proving Identities</h2>
+    <div class="box note">
+      <div class="box-title">Strategy for Proving Identities</div>
+      Work on <strong>one side only</strong>. Use algebra + identities to transform it into the other side.
+      Start with the more complicated side. Useful tactics: convert everything to $\sin$/$\cos$; factor; multiply by conjugates; combine fractions.
+    </div>
+
+    <h3>Worked Example 3.2</h3>
+    <p>Prove: $\dfrac{\sin\theta}{1-\cos\theta} - \dfrac{\sin\theta}{1+\cos\theta} = 2\cot\theta$</p>
+    <p>Work on the left side — combine fractions:</p>
+    $$\text{LHS} = \frac{\sin\theta(1+\cos\theta) - \sin\theta(1-\cos\theta)}{(1-\cos\theta)(1+\cos\theta)} = \frac{2\sin\theta\cos\theta}{1-\cos^2\theta} = \frac{2\sin\theta\cos\theta}{\sin^2\theta} = \frac{2\cos\theta}{\sin\theta} = 2\cot\theta \; \checkmark$$
+
+    <h2>Practice Problems</h2>
+    <div class="show-hide-bar">
+      <span>Solutions:</span>
+      <button class="btn-toggle" onclick="showAllSolutions(true)">Show All</button>
+      <button class="btn-toggle" onclick="showAllSolutions(false)">Hide All</button>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 1</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Find the exact value of $\sin\!\left(\dfrac{7\pi}{12}\right)$.</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Write $\dfrac{7\pi}{12} = \dfrac{\pi}{4} + \dfrac{\pi}{3}$:</p>
+        $$\sin\!\left(\frac{\pi}{4}+\frac{\pi}{3}\right) = \sin\frac{\pi}{4}\cos\frac{\pi}{3} + \cos\frac{\pi}{4}\sin\frac{\pi}{3} = \frac{\sqrt{2}}{2}\cdot\frac{1}{2} + \frac{\sqrt{2}}{2}\cdot\frac{\sqrt{3}}{2} = \frac{\sqrt{2}+\sqrt{6}}{4}$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 2</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">If $\cos\theta = \dfrac{3}{5}$ and $0 < \theta < \dfrac{\pi}{2}$, find $\sin 2\theta$ and $\cos 2\theta$.</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>$\sin\theta = \dfrac{4}{5}$ (positive in Q1).</p>
+        $$\sin 2\theta = 2\cdot\frac{4}{5}\cdot\frac{3}{5} = \frac{24}{25}$$
+        $$\cos 2\theta = \cos^2\theta - \sin^2\theta = \frac{9}{25} - \frac{16}{25} = -\frac{7}{25}$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header"><span class="problem-number">Problem 3</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button></div>
+      <div class="problem-body">Prove: $(\sin\theta + \cos\theta)^2 = 1 + \sin 2\theta$</div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$\text{LHS} = \sin^2\theta + 2\sin\theta\cos\theta + \cos^2\theta = (\sin^2\theta+\cos^2\theta) + 2\sin\theta\cos\theta = 1 + \sin 2\theta \; \checkmark$$
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="ch2-trig-graphs.html"><span class="nav-label">&#8592; Previous</span>Ch 2: Trig Graphs</a>
+      <a href="ch4-inverse-trig.html"><span class="nav-label">Next &#8594;</span>Ch 4: Inverse Trig</a>
+    </div>
+  </main>
+</div>
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../../js/site.js"></script>
+</body>
+</html>

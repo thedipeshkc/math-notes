@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ch 1: Exponents & Radicals – Algebra Notes</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+
+<header id="site-header">
+  <a href="../../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="algebra.html">Algebra</a>
+    <a href="../precalc/precalc.html">Pre-Calculus</a>
+    <a href="../../extras/cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="ch4-rational.html">4. Rational Expressions</a></li>
+      <li><a href="ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="ch6-inequalities.html">6. Inequalities</a></li>
+      <li><a href="ch7-functions.html">7. Functions &amp; Graphs</a></li>
+      <li><a href="ch8-lines.html">8. Lines &amp; Systems</a></li>
+      <li><a href="ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="../precalc/ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="../precalc/ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="../precalc/ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="../precalc/ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="../precalc/ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="../../extras/cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="../../extras/errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a><span class="sep">›</span>
+      <a href="algebra.html">Algebra</a><span class="sep">›</span>
+      Chapter 1: Exponents &amp; Radicals
+    </div>
+    <h1 class="page-title">Chapter 1: Exponents &amp; Radicals</h1>
+
+    <!-- ==================== SECTION 1 ==================== -->
+    <h2>1.1 — Integer Exponents</h2>
+
+    <p>
+      If $a$ is any real number and $n$ is a positive integer, we define
+      $$a^n = \underbrace{a \cdot a \cdot a \cdots a}_{n \text{ factors}}$$
+      We call $a$ the <strong>base</strong> and $n$ the <strong>exponent</strong> (or <strong>power</strong>).
+    </p>
+
+    <div class="box definition">
+      <div class="box-title">Definition — Zero and Negative Exponents</div>
+      For any nonzero $a$:
+      $$a^0 = 1 \qquad a^{-n} = \frac{1}{a^n}$$
+      Note: $0^0$ is undefined (or indeterminate, depending on context).
+    </div>
+
+    <div class="box theorem">
+      <div class="box-title">Theorem — Laws of Exponents</div>
+      Let $a, b$ be real numbers and $m, n$ be integers (with bases nonzero where needed):
+      <table style="margin-top:0.6rem;">
+        <tr><th>Law</th><th>Example</th></tr>
+        <tr><td>$a^m \cdot a^n = a^{m+n}$</td><td>$x^3 \cdot x^5 = x^8$</td></tr>
+        <tr><td>$\dfrac{a^m}{a^n} = a^{m-n}$</td><td>$\dfrac{x^7}{x^2} = x^5$</td></tr>
+        <tr><td>$(a^m)^n = a^{mn}$</td><td>$(x^3)^4 = x^{12}$</td></tr>
+        <tr><td>$(ab)^n = a^n b^n$</td><td>$(2x)^3 = 8x^3$</td></tr>
+        <tr><td>$\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}$</td><td>$\left(\dfrac{x}{3}\right)^2 = \dfrac{x^2}{9}$</td></tr>
+        <tr><td>$a^{-n} = \dfrac{1}{a^n}$</td><td>$x^{-4} = \dfrac{1}{x^4}$</td></tr>
+      </table>
+    </div>
+
+    <div class="box warn">
+      <div class="box-title">Common Mistake</div>
+      $(a + b)^n \neq a^n + b^n$ in general. For example,
+      $(x + 3)^2 = x^2 + 6x + 9$, <strong>not</strong> $x^2 + 9$.
+      The exponent does not distribute over addition.
+    </div>
+
+    <h3>Worked Example 1.1</h3>
+    <p>Simplify $\dfrac{(2x^3 y^{-2})^4}{4x^5 y^3}$, writing your answer with positive exponents only.</p>
+    <p><strong>Solution:</strong></p>
+    <p>First expand the numerator using $(ab)^n = a^n b^n$:</p>
+    $$\frac{(2x^3 y^{-2})^4}{4x^5 y^3} = \frac{2^4 \cdot x^{12} \cdot y^{-8}}{4x^5 y^3} = \frac{16 x^{12} y^{-8}}{4 x^5 y^3}$$
+    <p>Now divide coefficients and apply $a^m / a^n = a^{m-n}$:</p>
+    $$= 4 \cdot x^{12-5} \cdot y^{-8-3} = 4x^7 y^{-11} = \frac{4x^7}{y^{11}}$$
+
+    <!-- ==================== SECTION 2 ==================== -->
+    <h2>1.2 — Radicals and Rational Exponents</h2>
+
+    <div class="box definition">
+      <div class="box-title">Definition — $n$th Root</div>
+      For a positive integer $n$ and real number $a$, the <strong>principal $n$th root</strong> of $a$ is
+      $$\sqrt[n]{a} = a^{1/n}$$
+      meaning the non-negative number $b$ such that $b^n = a$ (when $a \geq 0$).
+      More generally, $a^{m/n} = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}$.
+    </div>
+
+    <div class="box theorem">
+      <div class="box-title">Properties of Radicals</div>
+      $$\sqrt[n]{ab} = \sqrt[n]{a}\,\sqrt[n]{b} \qquad \sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}} \qquad \sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}$$
+    </div>
+
+    <p>
+      A radical expression is in <strong>simplified form</strong> when: (1) no perfect $n$th-power factors
+      remain under the radical, (2) no fractions appear under the radical, and (3) no radicals appear
+      in a denominator (<strong>rationalized</strong>).
+    </p>
+
+    <h3>Worked Example 1.2</h3>
+    <p>Simplify $\sqrt{72x^5 y^8}$.</p>
+    <p><strong>Solution:</strong> Factor out perfect squares:</p>
+    $$\sqrt{72 x^5 y^8} = \sqrt{36 \cdot 2 \cdot x^4 \cdot x \cdot y^8} = 6x^2 y^4 \sqrt{2x}$$
+
+    <h3>Worked Example 1.3</h3>
+    <p>Rationalize the denominator: $\dfrac{3}{\sqrt{5} - \sqrt{2}}$.</p>
+    <p><strong>Solution:</strong> Multiply by the conjugate $(\sqrt{5}+\sqrt{2})$:</p>
+    $$\frac{3}{\sqrt{5}-\sqrt{2}} \cdot \frac{\sqrt{5}+\sqrt{2}}{\sqrt{5}+\sqrt{2}} = \frac{3(\sqrt{5}+\sqrt{2})}{5 - 2} = \frac{3(\sqrt{5}+\sqrt{2})}{3} = \sqrt{5}+\sqrt{2}$$
+
+    <div class="box note">
+      <div class="box-title">Note — Rational Exponent Connection</div>
+      Converting between radical and exponent notation is often useful for simplification:
+      $\sqrt[3]{x^2} = x^{2/3}$, so $\left(\sqrt[3]{x^2}\right)^6 = x^{(2/3)\cdot 6} = x^4$.
+    </div>
+
+    <!-- ==================== PRACTICE ==================== -->
+    <h2>Practice Problems</h2>
+
+    <div class="show-hide-bar">
+      <span>Solutions:</span>
+      <button class="btn-toggle" onclick="showAllSolutions(true)">Show All</button>
+      <button class="btn-toggle" onclick="showAllSolutions(false)">Hide All</button>
+    </div>
+
+    <!-- Problem 1 -->
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 1</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Simplify: $\left(\dfrac{3a^{-2}b^3}{a^4 b^{-1}}\right)^2$. Write your answer with positive exponents.
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>First simplify inside the parentheses:</p>
+        $$\frac{3a^{-2}b^3}{a^4 b^{-1}} = 3 \cdot a^{-2-4} \cdot b^{3-(-1)} = 3a^{-6}b^4$$
+        <p>Then square:</p>
+        $$(3a^{-6}b^4)^2 = 9a^{-12}b^8 = \frac{9b^8}{a^{12}}$$
+      </div>
+    </div>
+
+    <!-- Problem 2 -->
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 2</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Simplify: $\sqrt{50x^3 y^6}$
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Factor out the largest perfect square from each part:</p>
+        $$\sqrt{50x^3y^6} = \sqrt{25 \cdot 2 \cdot x^2 \cdot x \cdot y^6} = 5xy^3\sqrt{2x}$$
+      </div>
+    </div>
+
+    <!-- Problem 3 -->
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 3</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Rationalize the denominator and simplify: $\dfrac{4}{\sqrt{7}+\sqrt{3}}$
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Multiply top and bottom by the conjugate $(\sqrt{7}-\sqrt{3})$:</p>
+        $$\frac{4}{\sqrt{7}+\sqrt{3}} \cdot \frac{\sqrt{7}-\sqrt{3}}{\sqrt{7}-\sqrt{3}} = \frac{4(\sqrt{7}-\sqrt{3})}{7-3} = \frac{4(\sqrt{7}-\sqrt{3})}{4} = \sqrt{7}-\sqrt{3}$$
+      </div>
+    </div>
+
+    <!-- Problem 4 -->
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 4</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Rewrite $\sqrt[4]{x^3}$ as a power of $x$, then evaluate $\left(\sqrt[4]{x^3}\right)^8$ in simplified form.
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>$\sqrt[4]{x^3} = x^{3/4}$</p>
+        <p>Then:</p>
+        $$\left(x^{3/4}\right)^8 = x^{(3/4)\cdot 8} = x^6$$
+      </div>
+    </div>
+
+    <!-- Problem 5 -->
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 5</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Simplify completely: $\dfrac{x^{3/2} \cdot x^{1/3}}{x^{5/6}}$
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Add exponents in the numerator (find common denominator 6):</p>
+        $$x^{3/2} \cdot x^{1/3} = x^{9/6} \cdot x^{2/6} = x^{11/6}$$
+        <p>Then divide:</p>
+        $$\frac{x^{11/6}}{x^{5/6}} = x^{11/6 - 5/6} = x^{6/6} = x$$
+      </div>
+    </div>
+
+    <!-- Problem 6 -->
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 6</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Evaluate without a calculator: $\left(\dfrac{8}{27}\right)^{-2/3}$
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Apply the negative exponent to flip the fraction, then the $2/3$ power:</p>
+        $$\left(\frac{8}{27}\right)^{-2/3} = \left(\frac{27}{8}\right)^{2/3} = \left(\sqrt[3]{\frac{27}{8}}\right)^2 = \left(\frac{3}{2}\right)^2 = \frac{9}{4}$$
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="algebra.html"><span class="nav-label">&#8592; Back to</span>Algebra Overview</a>
+      <a href="ch2-polynomials.html"><span class="nav-label">Next chapter &#8594;</span>Ch 2: Polynomials</a>
+    </div>
+  </main>
+</div>
+
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ch 2: Polynomials – Algebra Notes</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+<header id="site-header">
+  <a href="../../index.html" class="site-title">Algebra &amp; Pre-Calculus Notes</a>
+  <nav>
+    <a href="algebra.html">Algebra</a>
+    <a href="../precalc/precalc.html">Pre-Calculus</a>
+    <a href="../../extras/cheatsheets.html">Cheat Sheets</a>
+  </nav>
+</header>
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-section-label">Algebra</div>
+    <ul>
+      <li><a href="ch1-exponents.html">1. Exponents &amp; Radicals</a></li>
+      <li><a href="ch2-polynomials.html">2. Polynomials</a></li>
+      <li><a href="ch3-factoring.html">3. Factoring</a></li>
+      <li><a href="ch4-rational.html">4. Rational Expressions</a></li>
+      <li><a href="ch5-equations.html">5. Solving Equations</a></li>
+      <li><a href="ch6-inequalities.html">6. Inequalities</a></li>
+      <li><a href="ch7-functions.html">7. Functions &amp; Graphs</a></li>
+      <li><a href="ch8-lines.html">8. Lines &amp; Systems</a></li>
+      <li><a href="ch9-explog.html">9. Exponentials &amp; Logs</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Pre-Calculus</div>
+    <ul>
+      <li><a href="../precalc/ch1-trig-basics.html">1. Trig Basics</a></li>
+      <li><a href="../precalc/ch2-trig-graphs.html">2. Trig Graphs</a></li>
+      <li><a href="../precalc/ch3-trig-identities.html">3. Trig Identities</a></li>
+      <li><a href="../precalc/ch4-inverse-trig.html">4. Inverse Trig</a></li>
+      <li><a href="../precalc/ch5-polar.html">5. Polar Coordinates</a></li>
+    </ul>
+    <div class="sidebar-section-label" style="margin-top:1rem;">Extras</div>
+    <ul>
+      <li><a href="../../extras/cheatsheets.html">Cheat Sheets</a></li>
+      <li><a href="../../extras/errors.html">Common Errors</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a><span class="sep">›</span>
+      <a href="algebra.html">Algebra</a><span class="sep">›</span>
+      Chapter 2: Polynomials
+    </div>
+    <h1 class="page-title">Chapter 2: Polynomials</h1>
+
+    <h2>2.1 — Definitions</h2>
+    <div class="box definition">
+      <div class="box-title">Definition — Polynomial</div>
+      A <strong>polynomial</strong> in $x$ is an expression of the form
+      $$a_n x^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0$$
+      where $n$ is a non-negative integer and the coefficients $a_i$ are real numbers with $a_n \neq 0$.
+      The <strong>degree</strong> of the polynomial is $n$.
+    </div>
+    <p>
+      Polynomials are classified by degree: <strong>constant</strong> (degree 0), <strong>linear</strong>
+      (degree 1), <strong>quadratic</strong> (degree 2), <strong>cubic</strong> (degree 3), and so on.
+      They are also classified by number of terms: <strong>monomial</strong> (1 term), <strong>binomial</strong>
+      (2 terms), <strong>trinomial</strong> (3 terms).
+    </p>
+
+    <h2>2.2 — Addition and Subtraction</h2>
+    <p>
+      To add or subtract polynomials, combine <strong>like terms</strong> — terms with the same variable
+      raised to the same power.
+    </p>
+    <h3>Worked Example 2.1</h3>
+    <p>Simplify $(3x^3 - 2x^2 + 5x - 1) - (x^3 + 4x^2 - 3x + 7)$.</p>
+    <p><strong>Solution:</strong> Distribute the minus sign, then combine like terms:</p>
+    $$= 3x^3 - 2x^2 + 5x - 1 - x^3 - 4x^2 + 3x - 7$$
+    $$= (3-1)x^3 + (-2-4)x^2 + (5+3)x + (-1-7) = 2x^3 - 6x^2 + 8x - 8$$
+
+    <h2>2.3 — Multiplication</h2>
+    <p>
+      Multiply polynomials by distributing every term of one polynomial over every term of the other
+      (the <strong>FOIL</strong> mnemonic is a special case for two binomials).
+    </p>
+
+    <div class="box theorem">
+      <div class="box-title">Special Products — Memorize These</div>
+      $$\begin{align}
+        (a+b)^2 &= a^2 + 2ab + b^2 \\
+        (a-b)^2 &= a^2 - 2ab + b^2 \\
+        (a+b)(a-b) &= a^2 - b^2
+      \end{align}$$
+    </div>
+
+    <h3>Worked Example 2.2</h3>
+    <p>Expand $(2x - 3)(x^2 + 5x - 4)$.</p>
+    <p><strong>Solution:</strong></p>
+    $$= 2x(x^2+5x-4) - 3(x^2+5x-4)$$
+    $$= 2x^3 + 10x^2 - 8x - 3x^2 - 15x + 12$$
+    $$= 2x^3 + 7x^2 - 23x + 12$$
+
+    <h2>2.4 — Polynomial Long Division</h2>
+    <p>
+      Dividing a polynomial $P(x)$ by a divisor $D(x)$ yields a quotient $Q(x)$ and remainder $R(x)$:
+      $$P(x) = D(x) \cdot Q(x) + R(x), \quad \deg R < \deg D$$
+    </p>
+    <h3>Worked Example 2.3</h3>
+    <p>Divide $2x^3 - 3x^2 + x - 5$ by $x - 2$.</p>
+    <p><strong>Solution</strong> (long division):</p>
+    <p>Step 1: $2x^3 \div x = 2x^2$. Multiply: $2x^2(x-2) = 2x^3 - 4x^2$. Subtract to get $x^2 + x - 5$.</p>
+    <p>Step 2: $x^2 \div x = x$. Multiply: $x(x-2) = x^2 - 2x$. Subtract to get $3x - 5$.</p>
+    <p>Step 3: $3x \div x = 3$. Multiply: $3(x-2) = 3x - 6$. Subtract to get $1$ (remainder).</p>
+    $$\frac{2x^3 - 3x^2 + x - 5}{x-2} = 2x^2 + x + 3 + \frac{1}{x-2}$$
+
+    <div class="box note">
+      <div class="box-title">Remainder Theorem</div>
+      When a polynomial $P(x)$ is divided by $(x - c)$, the remainder equals $P(c)$.
+      So to check Example 2.3: $P(2) = 16 - 12 + 2 - 5 = 1$. ✓
+    </div>
+
+    <h2>Practice Problems</h2>
+    <div class="show-hide-bar">
+      <span>Solutions:</span>
+      <button class="btn-toggle" onclick="showAllSolutions(true)">Show All</button>
+      <button class="btn-toggle" onclick="showAllSolutions(false)">Hide All</button>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 1</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Simplify: $(5x^2 - 3x + 1) + (2x^3 - x^2 + 4x - 6)$
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        $$= 2x^3 + (5-1)x^2 + (-3+4)x + (1-6) = 2x^3 + 4x^2 + x - 5$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 2</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Expand and simplify: $(3x + 4)^2 - (3x - 4)^2$
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Use the special product formulas:</p>
+        $$(3x+4)^2 = 9x^2 + 24x + 16$$
+        $$(3x-4)^2 = 9x^2 - 24x + 16$$
+        $$\text{Difference} = (9x^2+24x+16)-(9x^2-24x+16) = 48x$$
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 3</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Divide $3x^3 + x^2 - 8x + 4$ by $x + 2$ using polynomial long division.
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Step 1: $3x^3 \div x = 3x^2$. Multiply: $3x^2(x+2)=3x^3+6x^2$. Subtract: $-5x^2 - 8x + 4$.</p>
+        <p>Step 2: $-5x^2 \div x = -5x$. Multiply: $-5x(x+2)=-5x^2-10x$. Subtract: $2x+4$.</p>
+        <p>Step 3: $2x \div x = 2$. Multiply: $2(x+2)=2x+4$. Subtract: $0$ (no remainder).</p>
+        $$\frac{3x^3+x^2-8x+4}{x+2} = 3x^2 - 5x + 2$$
+        <p>Verify: $P(-2) = 3(-8)+4+16+4 = -24+4+16+4 = 0$. ✓</p>
+      </div>
+    </div>
+
+    <div class="problem-block">
+      <div class="problem-header">
+        <span class="problem-number">Problem 4</span>
+        <button class="btn-solution" onclick="toggleSolution(this)">Show Solution</button>
+      </div>
+      <div class="problem-body">
+        Expand: $(x+2)(x-3)(x+1)$
+      </div>
+      <div class="problem-solution">
+        <div class="solution-label">Solution</div>
+        <p>Multiply the first two factors first:</p>
+        $$(x+2)(x-3) = x^2 - x - 6$$
+        <p>Then multiply by $(x+1)$:</p>
+        $$(x^2 - x - 6)(x+1) = x^3 + x^2 - x^2 - x - 6x - 6 = x^3 - 7x - 6$$
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="ch1-exponents.html"><span class="nav-label">&#8592; Previous</span>Ch 1: Exponents &amp; Radicals</a>
+      <a href="ch3-factoring.html"><span class="nav-label">Next &#8594;</span>Ch 3: Factoring</a>
+    </div>
+  </main>
+</div>
+<footer id="site-footer">
+  Algebra &amp; Pre-Calculus Notes &mdash; Math rendered with <a href="https://www.mathjax.org">MathJax</a>
+</footer>
+<script src="../../js/site.js"></script>
+</body>
+</html>
